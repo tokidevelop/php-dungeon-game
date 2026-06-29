@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace App\Service;
 
-use App\DTO\RoomInteractionResult;
 use App\Entity\Monster;
 use App\Entity\Player;
 use App\Entity\Room;
 use App\Entity\Treasure;
 use App\Enum\RoomContent;
 use App\Exception\UnsupportedRoomContentException;
-
+use App\Result\RoomInteractionResult;
 use Random\RandomException;
 
 use function sprintf;

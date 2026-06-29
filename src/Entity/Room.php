@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
-use App\DTO\ExitCollection;
+use App\Collection\Exits;
 use App\Enum\Direction;
 use App\Enum\RoomContent;
 
 final class Room
 {
-    private ExitCollection $exits;
+    private Exits $exits;
 
     public function __construct(
         private readonly string $id,
@@ -18,7 +18,7 @@ final class Room
         private ?Monster $monster = null,
         private ?Treasure $treasure = null,
     ) {
-        $this->exits = new ExitCollection();
+        $this->exits = new Exits();
     }
 
     public function id(): string
@@ -51,7 +51,7 @@ final class Room
         return $this->exits->get($direction);
     }
 
-    public function exits(): ExitCollection
+    public function exits(): Exits
     {
         return $this->exits;
     }

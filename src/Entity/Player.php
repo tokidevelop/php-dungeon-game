@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
-use App\DTO\Inventory;
+use App\Collection\Inventory;
 use Random\RandomException;
 
 use function random_int;

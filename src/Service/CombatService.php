@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace App\Service;
 
-use App\DTO\CombatResult;
 use App\Entity\Monster;
 use App\Entity\Player;
-
+use App\Result\CombatResult;
 use Random\RandomException;
 
 use function sprintf;
