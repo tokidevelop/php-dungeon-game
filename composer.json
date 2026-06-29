@@ -1,0 +1,16 @@
+{
+    "name": "example/php-dungeon-game",
+    "description": "A small CLI dungeon game written in PHP with SOLID principles.",
+    "type": "project",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "play": "php play.php"
+    }
+}
